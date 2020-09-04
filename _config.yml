@@ -30,7 +30,7 @@ url: "https://angelo512.github.io" # the base hostname & protocol for your site,
 github_username:  Angelo512
 
 # Build settings
-theme: cayman
+theme: minima
 plugins:
   - jekyll-feed
 
