@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Creating A New Docker Container"
-date:   2020-09-04 15:03:00
+date:   2020-09-04 15:03:00 
 categories: jekyll Docker CIT480
+permalink: /docker/
 ---
 ## **What is Docker?**
 
