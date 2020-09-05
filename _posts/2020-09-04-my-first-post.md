@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating A New Docker Container"
 date:   2020-09-04 15:03:00 
-categories: jekyll Docker CIT480
+category: Docker
 permalink: /docker/
 ---
 ## **What is Docker?**
