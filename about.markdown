@@ -19,6 +19,8 @@ You can find the source code for Jekyll at GitHub:
 
 -->
 
-# Hello!
+# **Hello!**
 
-There is nothing to see here at the moment 
+Welcome all to my cool tech blog site.
+On this blog site I will talk about various topics within the IT landscape.
+From step by step tutorials to opinions on current IT practices and/or technologies.
