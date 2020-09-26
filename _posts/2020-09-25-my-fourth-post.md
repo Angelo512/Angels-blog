@@ -7,8 +7,6 @@ categories: Amazon-AWS EC2-Instance PEM-Keys SSH SCP
 
 ### **What is SSH and SCP?**
 
-#### <ins>***SSH And SCP***</ins>
-
 SSH, according to its man page, is is a program for logging into a remote machine and for executing commands on a remote machine 
 
 SCP (which stands for secure copy), according to its man page, copies files between hosts on a network. However, it uses SSH for data transer and uses the same authentication and security as SSH. It will also ask for passwords for authentication if needed. 
