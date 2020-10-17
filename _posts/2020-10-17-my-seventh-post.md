@@ -5,10 +5,6 @@ date: 2020-10-16 10:30:00
 category: Docker Copy Files
 ---
 
->```bash
-> $ docker run --rm -it ubuntu:18.04 bash
->```
-
 ## **How Does The Docker CP Commnand Even Work?**
 
 _**Let's allow docker and our terminal answer this question for us**_
