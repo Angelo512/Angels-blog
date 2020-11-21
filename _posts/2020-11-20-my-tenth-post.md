@@ -52,8 +52,29 @@ $ nc -nv IP.Address.of.A 4444
 
 3. Now start typing away! 
 
-Note that in this example container A is acting as the listening server and container B is therefore the client. This can be easily pointed out by the -l flag in the nc command executed on container A. 
+Note that in this example container A is acting as the listening server and container B is therefore the client. This can be easily pointed out by the -l flag in the nc command executed on container A.
 
+Alright One more cool feature of netcat is that you can transfer files between machines.
 
+1. On container A, lets create a .txt file with some basic content
+``` bash
+$ echo "Hello!" > payload.txt
+```
+
+2. On container B, create a file to recieve the content from container A
+``` bash
+$ nc -nlvp 4444 > fromA.txt
+```
+
+3. Now back on container A, lets send in our created file 
+``` bash
+$ nc -nv ip.address.of.B 4444 < payload.txt
+```
+
+4. Once the transfer is done, next ctrl+c on container A 
+
+5. Finally, on container B, if you use the ls command then the file fromA.txt should now be there including the "Hello!" text
+
+NetCat is pretty cool!
 
 
