@@ -18,6 +18,7 @@ So in general this tool is a very cool way to connect machines via their ip addr
 So I will provide some examples of netcat's functionalities using our favourite VM tool: Docker. 
 
 **Docker Setup**
+
 1. First things first, create two docker containers (lets name them A and B) both running ubuntu 18.04 
 
 2. Make sure you update and upgrade them both 
@@ -35,6 +36,7 @@ $ hostname -I
 
 
 **Netcat Commands**
+
 So first things first lets make a connection between container A and B and demonstrate a basic messaging system: 
 1. On container A, execute the following command: 
 
