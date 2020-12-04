@@ -11,6 +11,7 @@ categories: bash mac terminal aliases
 
 As you probably know or you do not know already but an alias is a user defined change to an existing command or the creation of a new command (somewhat in the realm of automation). In fact, using aliases you can automate and mainstream which and the amount of commands you execute in your daily workflow. You can even make commands better than their default versions, allow me to explain...
 
+<br>
 
 **The Setup**
 
@@ -28,6 +29,7 @@ $ nano .bash_profile
 ```
 4. Now we just add our custom commands 
 
+<br>
 
 **Adding our aliases** 
 
