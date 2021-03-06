@@ -8,7 +8,9 @@ categories: cl bash terminal
 ## **Bash Basics 1: How to Redirect Input and Output**
 
 <br> 
+
 Mastering the power of the command line and bash scripting is important for your future as an IT professional. In this blog post, I will go over an important skill to learn which is the power of redirection. Redirection, as the name suggests, is a Linux feature that allows you to change the standard input and output devices. As you know the stdin and stdout are is the keyboard and the screen but with redirection we can change that often for added utility/functionality. 
+
 <br>
 
 ---
