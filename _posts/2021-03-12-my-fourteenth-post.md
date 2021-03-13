@@ -9,7 +9,7 @@ categories: cl bash terminal
 
 <br>
 
-This blog post is a continuation of the previous blog post going over more bash basics. Here I will go over the power of bash piping. The use of the bash pipe allows a user to streamline a set of commands to achieve a specified and unique output. The pipe character is this one: |. Here are a few examples of how the pipe command: 
+This blog post is a continuation of the previous blog post going over more bash basics. Here I will go over the power of bash piping. The use of the bash pipe allows a user to streamline a set of commands to achieve a specified and unique output. The pipe character is this one: \|. Here are a few examples of how the pipe command: 
 
 <br>
 
