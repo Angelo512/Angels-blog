@@ -70,7 +70,7 @@ Our sample ansible playbook, we'll name it _ansible-playbook.yml_:
 Create a new file name _hosts.ini_ which will contain the IP Address of your EC2 Instance: 
 
 [web_server]
-<br>
+
 XXX.XXX.XXX.XXX
 
 Next,
