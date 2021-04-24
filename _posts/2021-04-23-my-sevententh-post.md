@@ -26,3 +26,23 @@ admin ----ssh----> bastion ----ssh----> private server
 
 ---
 
+**_Bastion-Host And Private-Server Creation_**
+
+So for practice on how this bastion-host to private server scenario would work, spin up two ec2 instances: 
+
+1. Bastion-Host
+    * Choose all the **free options** 
+    * Choose the **default VPC**
+    * Choose to enable a **public IP address**
+    * Create a **Security Group** of **SSH from My IP**
+        * This allows only you to ssh into this bastion instance
+    * Create a **new .pem key** and name it: **bastion_host_key**
+2. Private Server
+    * Choose all the **free options**
+    * Choose the **default VPC**
+    * **DONT** choose to enable a **public IP address**. Choose **disable**
+    * Create a **Security Group** of **SSH from Anywhere**
+        > "From anywhere?? Isnt this a private server?" We'll get there...
+    * Create a **new .pem key** and name it: **private_server_key**
+
+---
