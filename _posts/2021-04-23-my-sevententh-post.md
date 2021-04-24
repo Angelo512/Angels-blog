@@ -22,6 +22,7 @@ When given the choice to host a website or a web application on a AWS EC2 instan
 
 
 <center>admin ----ssh----> bastion ----ssh----></center>
+
 <br>
 ---
 
