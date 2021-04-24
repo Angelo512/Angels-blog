@@ -14,6 +14,7 @@ For today's post, we will take a look at how we can create an ec2 bastion server
 <br>
 
 ---
+<br>
 
 **_Security_**
 
@@ -21,6 +22,6 @@ When given the choice to host a website or a web application on a AWS EC2 instan
 
 
 <center>admin ----ssh----> bastion ----ssh----></center>
-
+<br>
 ---
 
