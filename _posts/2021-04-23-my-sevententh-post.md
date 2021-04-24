@@ -26,6 +26,7 @@ admin ----ssh----> bastion ----ssh----> private server
 
 ---
 
+
 **_Bastion-Host And Private-Server Creation_**
 
 So for practice on how this bastion-host to private server scenario would work, spin up two ec2 instances: 
@@ -44,5 +45,6 @@ So for practice on how this bastion-host to private server scenario would work, 
     * Create a **Security Group** of **SSH from Anywhere**
         > "From anywhere?? Isnt this a private server?" We'll get there...
     * Create a **new .pem key** and name it: **private_server_key**
+
 
 ---
