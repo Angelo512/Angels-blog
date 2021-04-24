@@ -26,7 +26,6 @@ admin ----ssh----> bastion ----ssh----> private server
 
 ---
 
-
 **_Bastion-Host And Private-Server Creation_**
 
 So for practice on how this bastion-host to private server scenario would work, spin up two ec2 instances: 
@@ -42,9 +41,43 @@ So for practice on how this bastion-host to private server scenario would work, 
     * Choose all the **free options**
     * Choose the **default VPC**
     * **DONT** choose to enable a **public IP address**. Choose **disable**
+        > Notice that there will be only a private ip address and no public address
     * Create a **Security Group** of **SSH from Anywhere**
         > "From anywhere?? Isnt this a private server?" We'll get there...
     * Create a **new .pem key** and name it: **private_server_key**
 
+---
+
+**_Editing The Private-Server Security Groups_**
+
+After creating your ec2 instances, copy the public and private ip addresses of your _bastion-host_ and add them to the ssh rule you gave to the _private-server_. Make it so that only those 2 ip addresses are the only ones to have ssh access to the _private-server_. Save that rule.
+
 
 ---
+
+**_Logging Into Your Bastion-Host_**
+
+So just traverse to the same directory where your **bastion_host_key**, open a terminal window, and ssh into it using the following command: 
+
+``` bash
+$ ssh -i "bastion_host_key.pem" ubuntu@public-ip-address
+```
+
+If you can login then it means you can now login into your _private-server_ now.
+But first, copy the _private-server_ key into your _bastion-host_ in a new terminal window.
+
+``` bash
+$ scp -i "bastion_host_key.pem" /local/location/of/private_server_key.pem ubuntu@ip-address-of-bastion-host:/home/ubuntu/
+```
+
+---
+
+**_Logging Into Your Private-Server_**
+
+So now to ssh into your _private-server_ through your _bastion-host_. From within your _bastion-host_, traverse to where you copied over the private key of the _private-server_ (so essentially /home/ubuntu) and type this command: 
+
+``` bash
+$ ssh -i "private_server_key.pem" ubuntu@private-ip-address-of-private-server
+```
+
+And now you should be logged into your _private-server_! And you can confirm you are inside your _private-server_ by typing the `ifconfig` command.
